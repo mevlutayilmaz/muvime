@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="setting"
+        android:icon="@drawable/grid_3x3__gap_fill"
+        android:id="@+id/setting"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:title="Movies"
+                android:id="@+id/menu_movies"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:title="Tv Series"
+                android:id="@+id/manu_tvseries"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:title="Persons"
+                android:id="@+id/menu_persons"
+                app:showAsAction="ifRoom"/>
+
+        </menu>
+
+
+    </item>
+
+    <item
+        android:title="person"
+        android:icon="@drawable/elipse_3"
+        android:id="@+id/person"
+        app:showAsAction="ifRoom" />
+
+</menu>
