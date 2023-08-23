@@ -1,7 +1,7 @@
 package com.example.muvime.adapter;
 
 import android.content.Context;
-import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,13 +9,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.muvime.model.Cast;
 import com.example.muvime.R;
-import com.example.muvime.view.CastActivity;
-import com.example.muvime.view.DetailActivity;
+import com.example.muvime.view.CastFragment;
 
 import java.util.List;
 
@@ -50,9 +52,21 @@ public class CastAdapter extends RecyclerView.Adapter<CastAdapter.CastViewHolder
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, CastActivity.class);
-                intent.putExtra("id", cast.getId());
-                context.startActivity(intent);
+                FragmentManager fragmentManager = ((AppCompatActivity) context).getSupportFragmentManager(); // Eğer fragment içindeyseniz getActivity() kullanın
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                CastFragment castFragment = new CastFragment(); // Diğer fragmentın sınıfını kullanın
+                Bundle bundle = new Bundle();
+                bundle.putInt("id", cast.getId());
+                castFragment.setArguments(bundle);
+
+                fragmentTransaction.replace(R.id.main_frame_layout, castFragment);
+                fragmentTransaction.addToBackStack(null); // Geri düğmesine basıldığında önceki fragmenta dönebilmek için geri yığın ekleyin
+                fragmentTransaction.commit();
+
+                //Intent intent = new Intent(context, CastActivity.class);
+                //intent.putExtra("id", cast.getId());
+                //context.startActivity(intent);
             }
         });
     }

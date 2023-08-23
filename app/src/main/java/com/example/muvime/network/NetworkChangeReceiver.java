@@ -7,9 +7,16 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.widget.Toast;
 
+import androidx.fragment.app.FragmentManager;
+
 import com.example.muvime.view.ConOffActivity;
 
 public class  NetworkChangeReceiver extends BroadcastReceiver {
+    private FragmentManager fragmentManager;
+
+    public NetworkChangeReceiver(FragmentManager fragmentManager) {
+        this.fragmentManager = fragmentManager;
+    }
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -18,7 +25,6 @@ public class  NetworkChangeReceiver extends BroadcastReceiver {
         } else {
             intent = new Intent(context, ConOffActivity.class);
             context.startActivity(intent);
-            Toast.makeText(context, "İnternet bağlantısı yok!", Toast.LENGTH_LONG).show();
         }
     }
 

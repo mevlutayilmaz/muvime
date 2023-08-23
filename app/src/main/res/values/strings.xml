@@ -1,9 +1,68 @@
 <resources>
     <string name="app_name">MUVIME</string>
+    <string name="english">English</string>
+    <string name="turkish">Turkish</string>
+    <string name="edit_name">Edit Name</string>
+    <string name="edit_mail">Edit Mail</string>
+    <string name="edit_language">Language</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="change">Change</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="biography">Biography</string>
+    <string name="popularity">Popularity</string>
+    <string name="known_job">Known Job</string>
+    <string name="retry">Retry</string>
+    <string name="check_internet">Check your internet connection and try again.</string>
+    <string name="top_cast">Top Cast</string>
+    <string name="director">Director</string>
+    <string name="writer">Writer, Screenplay</string>
+    <string name="overview">Overview</string>
+    <string name="more_like_this">More like This</string>
+    <string name="placeholer">Placeholder</string>
+    <string name="watch_trial">Watch Trial</string>
+    <string name="whats_popular">What\'s Popular</string>
+    <string name="free_to_watch">Free To Watch</string>
+    <string name="search_results">Search Results</string>
+    <string name="records">records</string>
+    <string name="the_basic">THE BASIC</string>
+    <string name="get_involed">GET INVOLVED</string>
+    <string name="community">COMMUNITY</string>
+    <string name="the_basic_under">About TMDB   Contact Us  Support Forums                      API                            System Status</string>
+    <string name="get_involed_under">Contribution Bible         3rd Party Applications       Add New Movie            Add New TV Show</string>
+    <string name="community_under">Guidelines   Discussions     Leaderboard     Twitter</string>
+    <string name="all_rigts_reserved">© 2021 Tübitak. All rights reserved.</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="api_terms_of_use">API Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="movie_added">Movie added to Watchlist.</string>
+    <string name="movie_added_already">The movie is already on the Watchlist.</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="log_out">Log Out</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure">Are you sure to log out?</string>
+    <string name="userpass_wrong">Username or password is wrong!</string>
+    <string name="not_empty">Cannot be empty!</string>
+    <string name="username_used">This username is being used!</string>
+    <string name="pass_not_match">Passwords do not match!</string>
+    <string name="edit_pass">Edit Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="old_pass">Old Password</string>
+    <string name="old_pass_not_match">Old password do not match!</string>
+    <string name="change_succes">Change is successful</string>
+    <string name="pass_pattern">Must contain at least 6 characters, uppercase, lowercase, numbers and symbols(@#$%^&amp;+=.,!?)!</string>
+    <string name="username_pattern">Must contain at least 4 characters and no spaces!</string>
+    <string name="mail_pattern">Enter a valid e-mail address!</string>
+    <string name="gallery_denied">Gallery permission denied!</string>
+    <string name="camera_denied">Camera permission denied!</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string-array name="languages">
-        <item>Türkçe</item>
-        <item>İngilizce</item>
-    </string-array>
+
 </resources>
