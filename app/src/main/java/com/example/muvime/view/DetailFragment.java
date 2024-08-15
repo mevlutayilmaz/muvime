@@ -56,8 +56,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class DetailFragment extends Fragment {
     private static final String BASE_URL = "https://api.themoviedb.org/3/";
-    private static final String API_KEY = "f0ee7c5edfa3b5b8d7fd73d8b1700c72";
-    private static final String SESSION_ID = "58c7db57ed28b057cd931d64eadaaef746684aaa";
+    private static final String API_KEY = "YOUR_API_KEY";
+    private static final String SESSION_ID = "YOUR_SESSION_ID";
     private  int list_id, movie_id;
     private ImageView movie_image, detail_bg_image, add_btn;
     private TextView duration, category, name_year, realese_year, overview, director, writer;
