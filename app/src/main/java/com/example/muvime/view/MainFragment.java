@@ -49,7 +49,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainFragment extends Fragment {
     private static final String BASE_URL = "https://api.themoviedb.org/3/";
-    private static final String API_KEY = "f0ee7c5edfa3b5b8d7fd73d8b1700c72";
+    private static final String API_KEY = "YOUR_API_KEY";
 
     private Button button_watch;
     private ImageView popular_bg_image;
