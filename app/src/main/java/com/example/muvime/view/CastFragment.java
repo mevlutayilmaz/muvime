@@ -43,7 +43,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class CastFragment extends Fragment {
     private static final String BASE_URL = "https://api.themoviedb.org/3/";
-    private static final String API_KEY = "f0ee7c5edfa3b5b8d7fd73d8b1700c72";
+    private static final String API_KEY = "YOUR_API_KEY";
 
     private ImageView cast_image, bg_image;
     private TextView cast_name, cast_birthday, cast_place_of_birth, cast_biography, cast_known_for_department, cast_popularity;
